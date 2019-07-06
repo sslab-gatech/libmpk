@@ -1,0 +1,380 @@
+./lib/ioremap.c:	pgd = pgd_offset_k(addr);
+./Documentation/virtual/uml/UserModeLinux-HOWTO.txt:  (gdb) call pgd_offset_proc(vma->vm_mm, address)
+./drivers/misc/sgi-gru/grufault.c:	pgdp = pgd_offset(vma->vm_mm, vaddr);
+./drivers/iommu/omap-iommu.c:	u32 *iopgd = iopgd_offset(obj, da);
+./drivers/iommu/omap-iommu.c:	u32 *iopgd = iopgd_offset(obj, da);
+./drivers/iommu/omap-iommu.c:	u32 *iopgd = iopgd_offset(obj, da);
+./drivers/iommu/omap-iommu.c:	u32 *iopgd = iopgd_offset(obj, da);
+./drivers/iommu/omap-iommu.c:	iopgd = iopgd_offset(obj, da);
+./drivers/iommu/omap-iommu.c:	u32 *iopgd = iopgd_offset(obj, da);
+./drivers/iommu/omap-iommu.c:			iopgd = iopgd_offset(obj, (da & IOSUPER_MASK));
+./drivers/iommu/omap-iommu.c:		iopgd = iopgd_offset(obj, da);
+./drivers/iommu/omap-iommu.c:	iopgd = iopgd_offset(obj, da);
+./drivers/iommu/omap-iommu-debug.c:	iopgd = iopgd_offset(obj, 0);
+./drivers/iommu/omap-iopgtable.h:#define iopgd_offset(obj, da)	((obj)->iopgd + iopgd_index(da))
+./fs/userfaultfd.c:	pgd = pgd_offset(mm, address);
+./include/asm-generic/pgtable.h:#define pgd_offset_gate(mm, addr)	pgd_offset(mm, addr)
+./mm/vmalloc.c:	pgd = pgd_offset_k(addr);
+./mm/vmalloc.c:	pgd = pgd_offset_k(addr);
+./mm/vmalloc.c:	pgd_t *pgd = pgd_offset_k(addr);
+./mm/migrate.c:	pgdp = pgd_offset(mm, addr);
+./mm/kasan/kasan_init.c:	pgd_t *pgd = pgd_offset_k(addr);
+./mm/memory.c:	pgd = pgd_offset(tlb->mm, addr);
+./mm/memory.c:	pgd_t *pgd = pgd_offset(vma->vm_mm, addr);
+./mm/memory.c:	dst_pgd = pgd_offset(dst_mm, addr);
+./mm/memory.c:	src_pgd = pgd_offset(src_mm, addr);
+./mm/memory.c:	pgd = pgd_offset(vma->vm_mm, addr);
+./mm/memory.c:	pgd = pgd_offset(mm, addr);
+./mm/memory.c:	pgd = pgd_offset(mm, addr);
+./mm/memory.c:	pgd = pgd_offset(mm, addr);
+./mm/memory.c:	pgd = pgd_offset(mm, address);
+./mm/memory.c:	pgd = pgd_offset(mm, address);
+./mm/pagewalk.c:	pgd = pgd_offset(walk->mm, addr);
+./mm/rmap.c:	pgd = pgd_offset(mm, address);
+./mm/sparse-vmemmap.c:	pgd_t *pgd = pgd_offset_k(addr);
+./mm/gup.c:	pgd = pgd_offset(mm, address);
+./mm/gup.c:		pgd = pgd_offset_k(address);
+./mm/gup.c:		pgd = pgd_offset_gate(mm, address);
+./mm/gup.c:	pgdp = pgd_offset(mm, addr);
+./mm/page_vma_mapped.c:	pgd = pgd_offset(mm, pvmw->address);
+./mm/mremap.c:	pgd = pgd_offset(mm, addr);
+./mm/mremap.c:	pgd = pgd_offset(mm, addr);
+./mm/hugetlb.c:	pgd_t *pgd = pgd_offset(mm, *addr);
+./mm/hugetlb.c:	pgd = pgd_offset(mm, addr);
+./mm/hugetlb.c:	pgd = pgd_offset(mm, addr);
+./mm/swapfile.c:	pgd = pgd_offset(vma->vm_mm, addr);
+./mm/userfaultfd.c:	pgd = pgd_offset(mm, address);
+./mm/huge_memory.c:	pgd = pgd_offset(vma->vm_mm, address);
+./mm/mprotect.c:	pgd = pgd_offset(mm, addr);
+Binary file ./cscope.out.in matches
+./tags:iopgd_offset	drivers/iommu/omap-iopgtable.h	93;"	d
+./tags:pgd_offset	arch/x86/include/asm/pgtable.h	912;"	d
+./tags:pgd_offset_gate	include/asm-generic/pgtable.h	397;"	d
+./tags:pgd_offset_k	arch/x86/include/asm/pgtable.h	921;"	d
+./arch/m32r/include/asm/pgtable.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./arch/m32r/include/asm/pgtable.h:#define pgd_offset_k(address)	pgd_offset(&init_mm, address)
+./arch/xtensa/include/asm/pgtable.h:#define pgd_offset_k(address)	pgd_offset(&init_mm, address)
+./arch/xtensa/include/asm/pgtable.h:#define pgd_offset(mm,address)	((mm)->pgd + pgd_index(address))
+./arch/xtensa/include/asm/pgtable.h: *                _PGD_OFFSET as C pgd_offset(struct mm_struct*, unsigned long),
+./arch/xtensa/include/asm/fixmap.h:		pmd_offset(pud_offset(pgd_offset_k(vaddr), (vaddr)), (vaddr)), \
+./arch/xtensa/mm/tlb.c:	pgd = pgd_offset(mm, vaddr);
+./arch/xtensa/mm/mmu.c:	pgd_t *pgd = pgd_offset_k(vaddr);
+./arch/xtensa/kernel/entry.S:	 *	pgd = pgd_offset (mm, regs->excvaddr);
+./arch/arc/include/asm/pgtable.h:#define pgd_offset_k(address)	pgd_offset(&init_mm, address)
+./arch/arc/include/asm/pgtable.h:#define pgd_offset(mm, addr)	(((mm)->pgd)+pgd_index(addr))
+./arch/arc/include/asm/pgtable.h:#define pgd_offset_fast(mm, addr)	\
+./arch/arc/include/asm/pgtable.h:#define pgd_offset_fast(mm, addr)	pgd_offset(mm, addr)
+./arch/arc/mm/highmem.c:	pgd_k = pgd_offset_k(kvaddr);
+./arch/arc/mm/fault.c:	pgd = pgd_offset_fast(current->active_mm, address);
+./arch/arc/mm/fault.c:	pgd_k = pgd_offset_k(address);
+./arch/nios2/include/asm/pgtable.h:#define pgd_offset(mm, addr)	((mm)->pgd + pgd_index(addr))
+./arch/nios2/include/asm/pgtable.h:#define pgd_offset_k(addr)	pgd_offset(&init_mm, addr)
+./arch/nios2/mm/pgtable.c:		init = pgd_offset(&init_mm, 0UL);
+./arch/nios2/mm/ioremap.c:	dir = pgd_offset(&init_mm, address);
+./arch/frv/include/asm/pgtable.h: * pgd_offset() returns a (pgd_t *)
+./arch/frv/include/asm/pgtable.h:#define pgd_offset(mm, address) ((mm)->pgd + pgd_index(address))
+./arch/frv/include/asm/pgtable.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/frv/include/asm/pgtable.h:		pgd_t *pge = pgd_offset(mm, address);
+./arch/frv/mm/dma-alloc.c:	pge = pgd_offset_k(va);
+./arch/frv/mm/fault.c:	pge = pgd_offset(current->mm, ear0);
+./arch/sh/include/asm/pgtable_32.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./arch/sh/include/asm/pgtable_32.h:#define __pgd_offset(address)	pgd_index(address)
+./arch/sh/include/asm/pgtable_32.h:#define pgd_offset_k(address)	pgd_offset(&init_mm, address)
+./arch/sh/include/asm/pgtable_64.h:#define __pgd_offset(address) pgd_index(address)
+./arch/sh/include/asm/pgtable_64.h:#define pgd_offset(mm, address) ((mm)->pgd+pgd_index(address))
+./arch/sh/include/asm/pgtable_64.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/sh/mm/tlbex_32.c:		pgd = pgd_offset_k(address);
+./arch/sh/mm/tlbex_32.c:		pgd = pgd_offset(current->mm, address);
+./arch/sh/mm/cache-sh4.c:	pgd = pgd_offset(vma->vm_mm, address);
+./arch/sh/mm/tlbex_64.c:		pgd = pgd_offset_k(address);
+./arch/sh/mm/tlbex_64.c:		pgd = pgd_offset(current->mm, address);
+./arch/sh/mm/kmap.c:	pte_offset_kernel(pmd_offset(pud_offset(pgd_offset_k(vaddr), (vaddr)), (vaddr)), (vaddr))
+./arch/sh/mm/cache-sh5.c:	pgd = pgd_offset(mm, addr);
+./arch/sh/mm/gup.c:	pgdp = pgd_offset(mm, addr);
+./arch/sh/mm/gup.c:	pgdp = pgd_offset(mm, addr);
+./arch/sh/mm/hugetlbpage.c:	pgd = pgd_offset(mm, addr);
+./arch/sh/mm/hugetlbpage.c:	pgd = pgd_offset(mm, addr);
+./arch/sh/mm/init.c:	pgd = pgd_offset_k(addr);
+./arch/sh/mm/init.c:	i = __pgd_offset(vaddr);
+./arch/ia64/include/asm/pgtable.h:pgd_offset (const struct mm_struct *mm, unsigned long address)
+./arch/ia64/include/asm/pgtable.h:#define pgd_offset_k(addr) \
+./arch/ia64/include/asm/pgtable.h:   resides in the kernel-mapped segment, hence we use pgd_offset_k()
+./arch/ia64/include/asm/pgtable.h:#define pgd_offset_gate(mm, addr)	pgd_offset_k(addr)
+./arch/ia64/mm/hugetlbpage.c:	pgd = pgd_offset(mm, taddr);
+./arch/ia64/mm/hugetlbpage.c:	pgd = pgd_offset(mm, taddr);
+./arch/ia64/mm/fault.c:	pgd = pgd_offset_k(address);
+./arch/ia64/mm/init.c:	pgd = pgd_offset_k(address);		/* note: this is NOT pgd_offset()! */
+./arch/ia64/mm/init.c:		pgd = pgd_offset_k(end_address);
+./arch/ia64/mm/init.c:		pgd = pgd_offset_k(address);
+./arch/ia64/kernel/ivt.S:(p6)	dep r17=r18,r19,3,(PAGE_SHIFT-3)	// r17=pgd_offset for region 5
+./arch/ia64/kernel/ivt.S:(p7)	dep r17=r18,r17,3,(PAGE_SHIFT-6)	// r17=pgd_offset for region[0-4]
+./arch/ia64/kernel/ivt.S:(p6)	dep r17=r18,r19,3,(PAGE_SHIFT-3)	// r17=pgd_offset for region 5
+./arch/ia64/kernel/ivt.S:(p7)	dep r17=r18,r17,3,(PAGE_SHIFT-6)	// r17=pgd_offset for region[0-4]
+./arch/openrisc/include/asm/pgtable.h:#define __pgd_offset(address)   pgd_index(address)
+./arch/openrisc/include/asm/pgtable.h:#define pgd_offset(mm, address) ((mm)->pgd+pgd_index(address))
+./arch/openrisc/include/asm/pgtable.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/openrisc/mm/init.c:		pge = pgd_offset_k(v);
+./arch/unicore32/include/asm/pgtable.h:#define pgd_offset(mm, addr)	((mm)->pgd+pgd_index(addr))
+./arch/unicore32/include/asm/pgtable.h:#define pgd_offset_k(addr)	pgd_offset(&init_mm, addr)
+./arch/unicore32/mm/pgd.c:	init_pgd = pgd_offset_k(0);
+./arch/unicore32/mm/mmu.c:	pgd = pgd_offset_k(addr);
+./arch/unicore32/mm/ioremap.c:	pgd = pgd_offset_k(addr);
+./arch/unicore32/mm/ioremap.c:	pgd = pgd_offset_k(addr);
+./arch/unicore32/mm/fault.c:	pgd = pgd_offset(mm, addr);
+./arch/unicore32/mm/mm.h:	return pmd_off(pgd_offset_k(virt), virt);
+./arch/m68k/include/asm/mmu_context.h:	pgd = pgd_offset(mm, mmuar);
+./arch/m68k/include/asm/mcf_pgtable.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./arch/m68k/include/asm/mcf_pgtable.h:#define pgd_offset_k(address)	pgd_offset(&init_mm, address)
+./arch/m68k/include/asm/mcf_pgtable.h:	dir = pgd_offset_k(addr);
+./arch/m68k/include/asm/mcf_pgtable.h:	dir = pgd_offset_k(addr);
+./arch/m68k/include/asm/motorola_pgtable.h:#define PAGE_DIR_OFFSET(tsk,address) pgd_offset((tsk),(address))
+./arch/m68k/include/asm/motorola_pgtable.h:static inline pgd_t *pgd_offset(const struct mm_struct *mm,
+./arch/m68k/include/asm/motorola_pgtable.h:static inline pgd_t *pgd_offset_k(unsigned long address)
+./arch/m68k/include/asm/motorola_pgtable.h:		dir = pgd_offset_k(addr);
+./arch/m68k/include/asm/motorola_pgtable.h:		dir = pgd_offset_k(addr);
+./arch/m68k/include/asm/sun3_pgtable.h:#define pgd_offset(mm, address) \
+./arch/m68k/include/asm/sun3_pgtable.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/m68k/mm/mcfmmu.c:	pgd = pgd_offset(mm, mmuar);
+./arch/m68k/mm/motorola.c:		pgd_dir = pgd_offset_k(virtaddr);
+./arch/m68k/mm/kmap.c:		pgd_dir = pgd_offset_k(virtaddr);
+./arch/m68k/mm/kmap.c:		pgd_dir = pgd_offset_k(virtaddr);
+./arch/m68k/mm/kmap.c:		pgd_dir = pgd_offset_k(virtaddr);
+./arch/m68k/kernel/sys_m68k.c:		pgd = pgd_offset(mm, (unsigned long)mem);
+./arch/m68k/sun3x/dvma.c:	pgd = pgd_offset_k(vaddr);
+./arch/um/include/asm/pgtable.h: * pgd_offset() returns a (pgd_t *)
+./arch/um/include/asm/pgtable.h:#define pgd_offset(mm, address) ((mm)->pgd+pgd_index(address))
+./arch/um/include/asm/pgtable.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/um/kernel/tlb.c:	pgd = pgd_offset(mm, addr);
+./arch/um/kernel/tlb.c:		pgd = pgd_offset(mm, addr);
+./arch/um/kernel/tlb.c:	pgd = pgd_offset(mm, address);
+./arch/um/kernel/tlb.c:pgd_t *pgd_offset_proc(struct mm_struct *mm, unsigned long address)
+./arch/um/kernel/tlb.c:	return pgd_offset(mm, address);
+./arch/um/kernel/tlb.c:	pgd_t *pgd = pgd_offset(task->mm, addr);
+./arch/um/kernel/trap.c:		pgd = pgd_offset(mm, address);
+./arch/um/kernel/skas/uaccess.c:	pgd = pgd_offset(mm, addr);
+./arch/um/kernel/skas/mmu.c:	pgd = pgd_offset(mm, proc);
+./arch/metag/include/asm/pgtable.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./arch/metag/include/asm/pgtable.h:#define pgd_offset_k(address)	pgd_offset(&init_mm, address)
+./arch/metag/include/asm/fixmap.h:		pmd_offset(pud_offset(pgd_offset_k(vaddr), (vaddr)), (vaddr)), \
+./arch/metag/mm/mmu-meta1.c:	p_swapper_pg_dir = pgd_offset_k(0) + entry;
+./arch/metag/mm/mmu-meta2.c:	p_swapper_pg_dir = pgd_offset_k(0) + entry;
+./arch/metag/mm/mmu-meta2.c:	p_swapper_pg_dir = pgd_offset_k(0) + entry;
+./arch/metag/mm/hugetlbpage.c:	pgd = pgd_offset(mm, addr);
+./arch/metag/mm/hugetlbpage.c:	pgd = pgd_offset(mm, addr);
+./arch/metag/kernel/dma.c:		pgd = pgd_offset(&init_mm, CONSISTENT_START);
+./arch/mn10300/include/asm/pgtable.h: * pgd_offset() returns a (pgd_t *)
+./arch/mn10300/include/asm/pgtable.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./arch/mn10300/include/asm/pgtable.h:#define pgd_offset_k(address)	pgd_offset(&init_mm, address)
+./arch/mn10300/mm/cache-flush-icache.c:	pgd = pgd_offset(current->mm, start);
+./arch/mn10300/mm/cache-inv-icache.c:	pgd = pgd_offset(current->mm, start);
+./arch/mn10300/mm/fault.c:	pgd = pgdir + __pgd_offset(address);
+./arch/hexagon/include/asm/pgtable.h: * pgd_offset - find an offset in a page-table-directory
+./arch/hexagon/include/asm/pgtable.h:#define pgd_offset(mm, addr) ((mm)->pgd + pgd_index(addr))
+./arch/hexagon/include/asm/pgtable.h: * pgd_offset_k - get kernel (init_mm) pgd entry pointer for addr
+./arch/hexagon/include/asm/pgtable.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/hexagon/include/asm/fixmap.h:	pte_offset_kernel(pmd_offset(pud_offset(pgd_offset_k(vaddr), \
+./arch/tile/include/asm/pgtable.h: * pgd_offset() returns a (pgd_t *)
+./arch/tile/include/asm/pgtable.h:#define pgd_offset(mm, address) ((mm)->pgd + pgd_index(address))
+./arch/tile/include/asm/pgtable.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/tile/mm/pgtable.c:	pgd = mm ? pgd_offset(mm, addr) : swapper_pg_dir + pgd_index(addr);
+./arch/tile/mm/highmem.c:	pte_offset_kernel(pmd_offset(pud_offset(pgd_offset_k(vaddr), (vaddr)),\
+./arch/tile/mm/hugetlbpage.c:	pgd = pgd_offset(mm, addr);
+./arch/tile/kernel/machine_kexec.c:		pgd_t *pgd = pgd_offset(current->mm, vaddr);
+./arch/microblaze/include/asm/pgtable.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/microblaze/include/asm/pgtable.h:#define pgd_offset(mm, address)	 ((mm)->pgd + pgd_index(address))
+./arch/microblaze/mm/pgtable.c:	pd = pmd_offset(pgd_offset_k(va), va);
+./arch/microblaze/mm/pgtable.c:	pgd = pgd_offset(mm, addr & PAGE_MASK);
+./arch/microblaze/mm/consistent.c:	return pte_offset_kernel(pmd_offset(pgd_offset_k(addr), addr), addr);
+./arch/microblaze/mm/init.c:	return pte_offset_kernel(pmd_offset(pgd_offset_k(vaddr),
+./arch/microblaze/kernel/signal.c:			pgd_offset(current->mm, address),
+./arch/parisc/include/asm/pgtable.h:#define pgd_offset(mm, address) \
+./arch/parisc/include/asm/pgtable.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/parisc/mm/hugetlbpage.c:	pgd = pgd_offset(mm, addr);
+./arch/parisc/mm/hugetlbpage.c:	pgd = pgd_offset(mm, addr);
+./arch/parisc/mm/init.c:	pg_dir = pgd_offset_k(start_vaddr);
+./arch/parisc/kernel/pci-dma.c:	dir = pgd_offset_k(vaddr);
+./arch/parisc/kernel/pci-dma.c:	dir = pgd_offset_k(vaddr);
+./arch/arm/lib/uaccess_with_memcpy.c:	pgd = pgd_offset(current->mm, addr);
+./arch/arm/mach-sa1100/assabet.c:	pmd = pmd_offset(pud_offset(pgd_offset_k(virt), virt), virt);
+./arch/arm/include/asm/pgtable.h:#define pgd_offset(mm, addr)	((mm)->pgd + pgd_index(addr))
+./arch/arm/include/asm/pgtable.h:#define pgd_offset_k(addr)	pgd_offset(&init_mm, addr)
+./arch/arm/mm/pgd.c:	init_pgd = pgd_offset_k(0);
+./arch/arm/mm/fault-armv.c:	pgd = pgd_offset(vma->vm_mm, address);
+./arch/arm/mm/mmu.c:	pgd_t *pgd = pgd_offset_k(addr);
+./arch/arm/mm/mmu.c:	pgd = pgd_offset(mm, addr);
+./arch/arm/mm/mmu.c:	pgd = pgd_offset(mm, addr);
+./arch/arm/mm/mmu.c:	pud_t *pud = pud_alloc(mm, pgd_offset(mm, md->virtual), md->virtual);
+./arch/arm/mm/ioremap.c:		memcpy(pgd_offset(mm, VMALLOC_START),
+./arch/arm/mm/ioremap.c:		       pgd_offset_k(VMALLOC_START),
+./arch/arm/mm/ioremap.c:	pgd = pgd_offset_k(addr);
+./arch/arm/mm/ioremap.c:	pgd = pgd_offset_k(addr);
+./arch/arm/mm/ioremap.c:	pgd = pgd_offset_k(virt);
+./arch/arm/mm/fault.c:	pgd = pgd_offset(mm, addr);
+./arch/arm/mm/mm.h:	return pmd_offset(pud_offset(pgd_offset_k(virt), virt), virt);
+./arch/arm/mm/init.c:	pmd = pmd_offset(pud_offset(pgd_offset(mm, addr), addr), addr);
+./arch/arm/mach-rpc/ecard.c:	src_pgd = pgd_offset(mm, (unsigned long)IO_BASE);
+./arch/arm/mach-rpc/ecard.c:	dst_pgd = pgd_offset(mm, IO_START);
+./arch/arm/mach-rpc/ecard.c:	src_pgd = pgd_offset(mm, (unsigned long)EASI_BASE);
+./arch/arm/mach-rpc/ecard.c:	dst_pgd = pgd_offset(mm, EASI_START);
+./arch/score/include/asm/pgalloc.h:		init = pgd_offset(&init_mm, 0UL);
+./arch/score/include/asm/pgtable.h:#define __pgd_offset(address)	pgd_index(address)
+./arch/score/include/asm/pgtable.h:#define pgd_offset_k(address)	pgd_offset(&init_mm, address)
+./arch/score/include/asm/pgtable.h:#define pgd_offset(mm, addr)	((mm)->pgd + pgd_index(addr))
+./arch/score/mm/cache.c:	pgdp = pgd_offset(mm, start);
+./arch/score/mm/cache.c:		pgdp = pgd_offset(mm, start);
+./arch/score/mm/fault.c:		int offset = __pgd_offset(address);
+./arch/sparc/include/asm/pgtable_32.h:#define pgd_offset(mm, address) ((mm)->pgd + pgd_index(address))
+./arch/sparc/include/asm/pgtable_32.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/sparc/include/asm/pgtable_64.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./arch/sparc/include/asm/pgtable_64.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/sparc/mm/srmmu.c:		pgd = pgd_offset_k(vaddr);
+./arch/sparc/mm/srmmu.c:		pgd_t *init = pgd_offset_k(0);
+./arch/sparc/mm/srmmu.c:	pgdp = pgd_offset_k(virt_addr);
+./arch/sparc/mm/srmmu.c:	pgdp = pgd_offset_k(virt_addr);
+./arch/sparc/mm/srmmu.c:		pgdp = pgd_offset_k(start);
+./arch/sparc/mm/srmmu.c:		pgdp = pgd_offset_k(start);
+./arch/sparc/mm/srmmu.c:		pgdp = pgd_offset_k(start);
+./arch/sparc/mm/srmmu.c:	pgd_t *pgdp = pgd_offset_k(vaddr);
+./arch/sparc/mm/srmmu.c:	pgd = pgd_offset_k(PKMAP_BASE);
+./arch/sparc/mm/fault_64.c:	pgd_t *pgdp = pgd_offset(current->mm, tpc);
+./arch/sparc/mm/iommu.c:			pgdp = pgd_offset(&init_mm, addr);
+./arch/sparc/mm/highmem.c:	dir = pmd_offset(pgd_offset_k(address), address);
+./arch/sparc/mm/gup.c:	pgdp = pgd_offset(mm, addr);
+./arch/sparc/mm/gup.c:	pgdp = pgd_offset(mm, addr);
+./arch/sparc/mm/hugetlbpage.c:	pgd = pgd_offset(mm, addr);
+./arch/sparc/mm/hugetlbpage.c:	pgd = pgd_offset(mm, addr);
+./arch/sparc/mm/hugetlbpage.c:	pgd = pgd_offset(tlb->mm, addr);
+./arch/sparc/mm/io-unit.c:			pgdp = pgd_offset(&init_mm, addr);
+./arch/sparc/mm/init_64.c:				pgd_t *pgdp = pgd_offset_k(kaddr);
+./arch/sparc/mm/init_64.c:	pgd = pgd_offset_k(addr);
+./arch/sparc/mm/init_64.c:		pgd_t *pgd = pgd_offset_k(vstart);
+./arch/sparc/mm/init_64.c:		pgd_t *pgd = pgd_offset_k(vstart);
+./arch/sparc/kernel/smp_64.c:	pgd_t *pgd = pgd_offset_k(addr);
+./arch/sparc/kernel/signal32.c:	pgdp = pgd_offset(current->mm, address);
+./arch/powerpc/lib/code-patching.c:	pgdp = pgd_offset_k(addr);
+./arch/powerpc/include/asm/book3s/64/pgtable.h:#define pgd_offset(mm, address)	 ((mm)->pgd + pgd_index(address))
+./arch/powerpc/include/asm/book3s/64/pgtable.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/powerpc/include/asm/book3s/32/pgtable.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/powerpc/include/asm/book3s/32/pgtable.h:#define pgd_offset(mm, address)	 ((mm)->pgd + pgd_index(address))
+./arch/powerpc/include/asm/nohash/64/pgtable.h:#define pgd_offset(mm, address)	 ((mm)->pgd + pgd_index(address))
+./arch/powerpc/include/asm/nohash/64/pgtable.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/powerpc/include/asm/nohash/32/pgtable.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/powerpc/include/asm/nohash/32/pgtable.h:#define pgd_offset(mm, address)	 ((mm)->pgd + pgd_index(address))
+./arch/powerpc/mm/subpage-prot.c:	pgd = pgd_offset(mm, addr);
+./arch/powerpc/mm/dump_linuxpagetables.c:	pgd_t *pgd = pgd_offset_k(0UL);
+./arch/powerpc/mm/ppc_mmu_32.c:	pmd = pmd_offset(pud_offset(pgd_offset(mm, ea), ea), ea);
+./arch/powerpc/mm/mem.c:	return pte_offset_kernel(pmd_offset(pud_offset(pgd_offset_k(vaddr),
+./arch/powerpc/mm/dump_hashpagetable.c:	pgd_t *pgd = pgd_offset_k(0UL);
+./arch/powerpc/mm/dma-noncoherent.c:		ptep = pte_offset_kernel(pmd_offset(pud_offset(pgd_offset_k(addr),
+./arch/powerpc/mm/dma-noncoherent.c:	pgd_t *pgd = pgd_offset_k(cpu_addr);
+./arch/powerpc/mm/pgtable_32.c:	pd = pmd_offset(pud_offset(pgd_offset_k(va), va), va);
+./arch/powerpc/mm/pgtable_32.c:        pgd = pgd_offset(mm, addr & PAGE_MASK);
+./arch/powerpc/mm/40x_mmu.c:		pmdp = pmd_offset(pud_offset(pgd_offset_k(v), v), v);
+./arch/powerpc/mm/40x_mmu.c:		pmdp = pmd_offset(pud_offset(pgd_offset_k(v), v), v);
+./arch/powerpc/mm/pgtable-hash64.c:		pgdp = pgd_offset_k(ea);
+./arch/powerpc/mm/tlb_hash32.c:	pmd = pmd_offset(pud_offset(pgd_offset(mm, start), start), start);
+./arch/powerpc/mm/tlb_hash32.c:	pmd = pmd_offset(pud_offset(pgd_offset(mm, vmaddr), vmaddr), vmaddr);
+./arch/powerpc/mm/pgtable-book3e.c:		pgdp = pgd_offset_k(ea);
+./arch/powerpc/mm/pgtable-book3e.c:		pgdp = pgd_offset_k(ea);
+./arch/powerpc/mm/hugetlbpage.c:	pg = pgd_offset(mm, addr);
+./arch/powerpc/mm/hugetlbpage.c:		pgd = pgd_offset(tlb->mm, addr);
+./arch/powerpc/mm/pgtable-radix.c:		pgdp = pgd_offset_k(ea);
+./arch/powerpc/mm/pgtable-radix.c:		pgdp = pgd_offset_k(ea);
+./arch/powerpc/mm/pgtable-radix.c:		pgdp = pgd_offset_k(idx);
+./arch/powerpc/mm/pgtable-radix.c:		pgd = pgd_offset_k(addr);
+./arch/x86/xen/mmu_pv.c:	pgd = pgd_offset_k(vaddr);
+./arch/x86/include/asm/pgtable.h: * pgd_offset() returns a (pgd_t *)
+./arch/x86/include/asm/pgtable.h:#define pgd_offset(mm, address) (REAL_PGD(current, mm) + pgd_index((address)));\
+./arch/x86/include/asm/pgtable.h:#define pgd_offset_k(address) ((&init_mm)->pgd + pgd_index((address)))
+./arch/x86/mm/kasan_init_64.c:		pgd = pgd_offset_k(start);
+./arch/x86/mm/kaslr.c:	pgd = pgd_offset_k((unsigned long)__va(paddr));
+./arch/x86/mm/kaslr.c:	pgd = pgd_offset_k((unsigned long)__va(paddr));
+./arch/x86/mm/pageattr.c:        return lookup_address_in_pgd(pgd_offset_k(address), address, level);
+./arch/x86/mm/pageattr.c:	pgd = pgd_offset_k(address);
+./arch/x86/mm/init_32.c:	pgd_t *pgd = pgd_offset_k(vaddr);
+./arch/x86/mm/init_64.c:		const pgd_t *pgd_ref = pgd_offset_k(addr);
+./arch/x86/mm/init_64.c:		pgd_t *pgd_ref = pgd_offset_k(addr);
+./arch/x86/mm/init_64.c:	pgd = pgd_offset_k(vaddr);
+./arch/x86/mm/init_64.c:	pgd = pgd_offset_k(vaddr);
+./arch/x86/mm/init_64.c:		pgd = pgd_offset_k((unsigned long)__va(phys));
+./arch/x86/mm/init_64.c:		pgd_t *pgd = pgd_offset_k(vaddr);
+./arch/x86/mm/init_64.c:		pgd = pgd_offset_k(addr);
+./arch/x86/mm/init_64.c:	pgd = pgd_offset_k(addr);
+./arch/x86/mm/init_64.c:		pgd = pgd_offset_k(addr);
+./arch/x86/mm/fault.c:	pgd_ref = pgd_offset_k(address);
+./arch/x86/kernel/vm86_32.c:	pgd = pgd_offset(mm, 0xA0000);
+./arch/x86/kernel/tboot.c:	pgd = pgd_offset(&tboot_mm, vaddr);
+./arch/x86/platform/efi/efi_64.c:		pgd_efi = pgd_offset_k(addr_pgd);
+./arch/x86/platform/efi/efi_64.c:				pgd_k = pgd_offset_k(vaddr);
+./arch/x86/platform/efi/efi_64.c:		pgd = pgd_offset_k(pgd_idx * PGDIR_SIZE);
+./arch/x86/platform/efi/efi_64.c:		set_pgd(pgd_offset_k(pgd_idx * PGDIR_SIZE), save_pgd[pgd_idx]);
+./arch/x86/platform/efi/efi_64.c:	pgd_k = pgd_offset_k(PAGE_OFFSET);
+./arch/x86/platform/efi/efi_64.c:	pgd_k = pgd_offset_k(EFI_VA_END);
+./arch/mips/include/asm/pgtable-32.h:#define __pgd_offset(address)	pgd_index(address)
+./arch/mips/include/asm/pgtable-32.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/mips/include/asm/pgtable-32.h:#define pgd_offset(mm, addr)	((mm)->pgd + pgd_index(addr))
+./arch/mips/include/asm/fixmap.h:	pte_offset_kernel(pmd_offset(pud_offset(pgd_offset_k(vaddr), (vaddr)), (vaddr)), (vaddr))
+./arch/mips/include/asm/pgtable-64.h:#define __pgd_offset(address)	pgd_index(address)
+./arch/mips/include/asm/pgtable-64.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/mips/include/asm/pgtable-64.h:#define pgd_offset(mm, addr)	((mm)->pgd + pgd_index(addr))
+./arch/mips/mm/c-tx39.c:	pgdp = pgd_offset(mm, page);
+./arch/mips/mm/tlb-r8k.c:	pgdp = pgd_offset(vma->vm_mm, address);
+./arch/mips/mm/pgtable.c:		init = pgd_offset(&init_mm, 0UL);
+./arch/mips/mm/c-r4k.c:	pgdp = pgd_offset(mm, addr);
+./arch/mips/mm/tlb-r4k.c:	pgdp = pgd_offset(vma->vm_mm, address);
+./arch/mips/mm/pgtable-32.c:	pgd = swapper_pg_dir + __pgd_offset(vaddr);
+./arch/mips/mm/gup.c:	pgdp = pgd_offset(mm, addr);
+./arch/mips/mm/gup.c:	pgdp = pgd_offset(mm, addr);
+./arch/mips/mm/hugetlbpage.c:	pgd = pgd_offset(mm, addr);
+./arch/mips/mm/hugetlbpage.c:	pgd = pgd_offset(mm, addr);
+./arch/mips/mm/ioremap.c:	dir = pgd_offset(&init_mm, address);
+./arch/mips/mm/fault.c:		int offset = __pgd_offset(address);
+./arch/mips/mm/c-r3k.c:	pgdp = pgd_offset(mm, addr);
+./arch/mips/mm/init.c:	i = __pgd_offset(vaddr);
+./arch/cris/include/asm/pgtable.h:static inline pgd_t * pgd_offset(const struct mm_struct *mm, unsigned long address)
+./arch/cris/include/asm/pgtable.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/cris/arch-v10/README.mm:static inline pgd_t * pgd_offset(struct mm_struct * mm, unsigned long address)
+./arch/arm64/include/asm/pgtable.h:#define pgd_offset_raw(pgd, addr)	((pgd) + pgd_index(addr))
+./arch/arm64/include/asm/pgtable.h:#define pgd_offset(mm, addr)	(pgd_offset_raw((mm)->pgd, (addr)))
+./arch/arm64/include/asm/pgtable.h:#define pgd_offset_k(addr)	pgd_offset(&init_mm, addr)
+./arch/arm64/mm/kasan_init.c:	pgd = pgd_offset_k(addr);
+./arch/arm64/mm/kasan_init.c:	pgd = pgd_offset_k(KASAN_SHADOW_START);
+./arch/arm64/mm/kasan_init.c:	pgd_end = pgd_offset_k(KASAN_SHADOW_END);
+./arch/arm64/mm/kasan_init.c:	pgd_new = pgd_offset_raw(pgdir, KASAN_SHADOW_START);
+./arch/arm64/mm/kasan_init.c:		set_pgd(pgd_offset_k(start), __pgd(0));
+./arch/arm64/mm/pageattr.c:	pgd = pgd_offset_k(addr);
+./arch/arm64/mm/hugetlbpage.c:	pgd_t *pgd = pgd_offset(mm, addr);
+./arch/arm64/mm/hugetlbpage.c:	pgd = pgd_offset(mm, addr);
+./arch/arm64/mm/hugetlbpage.c:	pgd = pgd_offset(mm, addr);
+./arch/arm64/mm/mmu.c:	pgd_t *pgd = pgd_offset_raw(pgdir, virt);
+./arch/arm64/mm/mmu.c:	if (!pgd_val(*pgd_offset_raw(pgd, FIXADDR_START))) {
+./arch/arm64/mm/mmu.c:		set_pgd(pgd_offset_raw(pgd, FIXADDR_START),
+./arch/arm64/mm/mmu.c:			*pgd_offset_k(FIXADDR_START));
+./arch/arm64/mm/mmu.c:	pgd = pgd_offset_k(addr);
+./arch/arm64/mm/mmu.c:	pgd_t *pgd = pgd_offset_k(addr);
+./arch/arm64/mm/mmu.c:	pgd = pgd_offset_k(addr);
+./arch/arm64/mm/dump.c:	pgd_t *pgd = pgd_offset(mm, 0UL);
+./arch/arm64/mm/fault.c:	pgd = pgd_offset(mm, addr);
+./arch/arm64/kernel/hibernate.c:	pgd = pgd_offset_raw(allocator(mask), dst_addr);
+./arch/arm64/kernel/hibernate.c:	pgd_t *src_pgd = pgd_offset_k(start);
+./arch/arm64/kernel/hibernate.c:	dst_pgd = pgd_offset_raw(dst_pgd, start);
+./arch/alpha/include/asm/pgtable.h:#define PAGE_DIR_OFFSET(tsk,address) pgd_offset((tsk),(address))
+./arch/alpha/include/asm/pgtable.h:#define pgd_offset_k(address) pgd_offset(&init_mm, (address))
+./arch/alpha/include/asm/pgtable.h:#define pgd_offset(mm, address)	((mm)->pgd+pgd_index(address))
+./arch/alpha/include/asm/pgtable.h: * pgd_offset does not require such a barrier.
+./arch/alpha/mm/init.c:	init = pgd_offset(&init_mm, 0UL);
+./arch/alpha/mm/init.c:	pgd = pgd_offset_k(VMALLOC_START);
+./arch/s390/include/asm/pgtable.h:#define pgd_offset(mm, address) ((mm)->pgd + pgd_index(address))
+./arch/s390/include/asm/pgtable.h:#define pgd_offset_k(address) pgd_offset(&init_mm, address)
+./arch/s390/mm/vmem.c:		pg_dir = pgd_offset_k(address);
+./arch/s390/mm/vmem.c:		pg_dir = pgd_offset_k(address);
+./arch/s390/mm/vmem.c:		pg_dir = pgd_offset_k(address);
+./arch/s390/mm/pgtable.c:	pgd = pgd_offset(mm, addr);
+./arch/s390/mm/gmap.c:	pgd = pgd_offset(mm, vmaddr);
+./arch/s390/mm/dump_pagetables.c:		pgd = pgd_offset_k(addr);
+./arch/s390/mm/pageattr.c:	pgdp = pgd_offset_k(addr);
+./arch/s390/mm/pageattr.c:		pgd = pgd_offset_k(address);
+./arch/s390/mm/gup.c:	pgdp = pgd_offset(mm, addr);
+./arch/s390/mm/hugetlbpage.c:	pgdp = pgd_offset(mm, addr);
+./arch/s390/mm/hugetlbpage.c:	pgdp = pgd_offset(mm, addr);
+./arch/s390/mm/page-states.c:	pgd = pgd_offset_k(addr);

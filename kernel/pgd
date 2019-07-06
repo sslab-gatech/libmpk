@@ -1,0 +1,400 @@
+Binary file ./cscope.out matches
+./pgd_offset:./arch/m32r/include/asm/pgtable.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./pgd_offset:./arch/xtensa/include/asm/pgtable.h:#define pgd_offset(mm,address)	((mm)->pgd + pgd_index(address))
+./pgd_offset:./arch/arc/include/asm/pgtable.h:#define pgd_offset(mm, addr)	(((mm)->pgd)+pgd_index(addr))
+./pgd_offset:./arch/nios2/include/asm/pgtable.h:#define pgd_offset(mm, addr)	((mm)->pgd + pgd_index(addr))
+./pgd_offset:./arch/frv/include/asm/pgtable.h:#define pgd_offset(mm, address) ((mm)->pgd + pgd_index(address))
+./pgd_offset:./arch/sh/include/asm/pgtable_32.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./pgd_offset:./arch/sh/include/asm/pgtable_64.h:#define pgd_offset(mm, address) ((mm)->pgd+pgd_index(address))
+./pgd_offset:./arch/openrisc/include/asm/pgtable.h:#define pgd_offset(mm, address) ((mm)->pgd+pgd_index(address))
+./pgd_offset:./arch/unicore32/include/asm/pgtable.h:#define pgd_offset(mm, addr)	((mm)->pgd+pgd_index(addr))
+./pgd_offset:./arch/m68k/include/asm/mcf_pgtable.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./pgd_offset:./arch/um/include/asm/pgtable.h:#define pgd_offset(mm, address) ((mm)->pgd+pgd_index(address))
+./pgd_offset:./arch/metag/include/asm/pgtable.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./pgd_offset:./arch/mn10300/include/asm/pgtable.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./pgd_offset:./arch/hexagon/include/asm/pgtable.h:#define pgd_offset(mm, addr) ((mm)->pgd + pgd_index(addr))
+./pgd_offset:./arch/tile/include/asm/pgtable.h:#define pgd_offset(mm, address) ((mm)->pgd + pgd_index(address))
+./pgd_offset:./arch/microblaze/include/asm/pgtable.h:#define pgd_offset(mm, address)	 ((mm)->pgd + pgd_index(address))
+./pgd_offset:./arch/arm/include/asm/pgtable.h:#define pgd_offset(mm, addr)	((mm)->pgd + pgd_index(addr))
+./pgd_offset:./arch/score/include/asm/pgtable.h:#define pgd_offset(mm, addr)	((mm)->pgd + pgd_index(addr))
+./pgd_offset:./arch/sparc/include/asm/pgtable_32.h:#define pgd_offset(mm, address) ((mm)->pgd + pgd_index(address))
+./pgd_offset:./arch/sparc/include/asm/pgtable_64.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./pgd_offset:./arch/powerpc/include/asm/book3s/64/pgtable.h:#define pgd_offset(mm, address)	 ((mm)->pgd + pgd_index(address))
+./pgd_offset:./arch/powerpc/include/asm/book3s/32/pgtable.h:#define pgd_offset(mm, address)	 ((mm)->pgd + pgd_index(address))
+./pgd_offset:./arch/powerpc/include/asm/nohash/64/pgtable.h:#define pgd_offset(mm, address)	 ((mm)->pgd + pgd_index(address))
+./pgd_offset:./arch/powerpc/include/asm/nohash/32/pgtable.h:#define pgd_offset(mm, address)	 ((mm)->pgd + pgd_index(address))
+./pgd_offset:./arch/x86/include/asm/pgtable.h:#define pgd_offset_k(address) ((&init_mm)->pgd + pgd_index((address)))
+./pgd_offset:./arch/mips/include/asm/pgtable-32.h:#define pgd_offset(mm, addr)	((mm)->pgd + pgd_index(addr))
+./pgd_offset:./arch/mips/include/asm/pgtable-64.h:#define pgd_offset(mm, addr)	((mm)->pgd + pgd_index(addr))
+./pgd_offset:./arch/arm64/include/asm/pgtable.h:#define pgd_offset(mm, addr)	(pgd_offset_raw((mm)->pgd, (addr)))
+./pgd_offset:./arch/alpha/include/asm/pgtable.h:#define pgd_offset(mm, address)	((mm)->pgd+pgd_index(address))
+./pgd_offset:./arch/s390/include/asm/pgtable.h:#define pgd_offset(mm, address) ((mm)->pgd + pgd_index(address))
+./tools/perf/util/intel-pt-decoder/intel-pt-decoder.c:	decoder->pgd_ip             = params->pgd_ip;
+./tools/perf/util/intel-pt-decoder/intel-pt-decoder.c:	    decoder->pgd_ip &&
+./tools/perf/util/intel-pt-decoder/intel-pt-decoder.c:	    decoder->pgd_ip(decoder->state.to_ip, decoder->data)) {
+./tools/perf/util/intel-pt-decoder/intel-pt-decoder.c:		if (decoder->pgd_ip &&
+./tools/perf/util/intel-pt-decoder/intel-pt-decoder.c:		    decoder->pgd_ip(to_ip, decoder->data)) {
+Binary file ./.tmp_vmlinux2 matches
+./Documentation/s390/Debugging390.txt:task->active_mm->pgd
+./drivers/gpu/drm/nouveau/nvkm/subdev/mmu/gf100.c:	list_for_each_entry(vpgd, &vm->pgd_list, head) {
+./drivers/gpu/drm/nouveau/nvkm/subdev/mmu/base.c:		list_for_each_entry(vpgd, &vm->pgd_list, head) {
+./drivers/gpu/drm/nouveau/nvkm/subdev/mmu/base.c:	list_for_each_entry(vpgd, &vm->pgd_list, head) {
+./drivers/gpu/drm/nouveau/nvkm/subdev/mmu/base.c:	INIT_LIST_HEAD(&vm->pgd_list);
+./drivers/gpu/drm/nouveau/nvkm/subdev/mmu/base.c:	list_add(&vpgd->head, &vm->pgd_list);
+./drivers/gpu/drm/nouveau/nvkm/subdev/mmu/base.c:	list_for_each_entry_safe(vpgd, tmp, &vm->pgd_list, head) {
+./drivers/gpu/drm/nouveau/nvkm/subdev/mmu/base.c:	list_for_each_entry_safe(vpgd, tmp, &vm->pgd_list, head) {
+./drivers/gpu/drm/nouveau/nvkm/subdev/secboot/gm200.c:	ret = nvkm_gpuobj_new(device, 0x8000, 0, true, NULL, &gsb->pgd);
+./drivers/gpu/drm/nouveau/nvkm/subdev/secboot/gm200.c:	ret = nvkm_vm_ref(vm, &gsb->vm, gsb->pgd);
+./drivers/gpu/drm/nouveau/nvkm/subdev/secboot/gm200.c:	nvkm_wo32(gsb->inst, 0x200, lower_32_bits(gsb->pgd->addr));
+./drivers/gpu/drm/nouveau/nvkm/subdev/secboot/gm200.c:	nvkm_wo32(gsb->inst, 0x204, upper_32_bits(gsb->pgd->addr));
+./drivers/gpu/drm/nouveau/nvkm/subdev/secboot/gm200.c:	nvkm_vm_ref(NULL, &gsb->vm, gsb->pgd);
+./drivers/gpu/drm/nouveau/nvkm/subdev/secboot/gm200.c:	nvkm_gpuobj_del(&gsb->pgd);
+./drivers/gpu/drm/nouveau/nvkm/subdev/bar/gf100.c:	ret = nvkm_gpuobj_new(device, 0x8000, 0, false, NULL, &bar_vm->pgd);
+./drivers/gpu/drm/nouveau/nvkm/subdev/bar/gf100.c:	ret = nvkm_vm_ref(vm, &bar_vm->vm, bar_vm->pgd);
+./drivers/gpu/drm/nouveau/nvkm/subdev/bar/gf100.c:	nvkm_wo32(bar_vm->mem, 0x0200, lower_32_bits(bar_vm->pgd->addr));
+./drivers/gpu/drm/nouveau/nvkm/subdev/bar/gf100.c:	nvkm_wo32(bar_vm->mem, 0x0204, upper_32_bits(bar_vm->pgd->addr));
+./drivers/gpu/drm/nouveau/nvkm/subdev/bar/nv50.c:	ret = nvkm_gpuobj_new(device, bar->pgd_addr, 0, false, bar->mem,
+./drivers/gpu/drm/nouveau/nvkm/subdev/bar/nv50.c:	ret = nvkm_gpuobj_new(device, 0x4000, 0, false, bar->mem, &bar->pgd);
+./drivers/gpu/drm/nouveau/nvkm/subdev/bar/nv50.c:	ret = nvkm_vm_ref(vm, &bar->bar3_vm, bar->pgd);
+./drivers/gpu/drm/nouveau/nvkm/subdev/bar/nv50.c:	ret = nvkm_vm_ref(vm, &bar->bar1_vm, bar->pgd);
+./drivers/gpu/drm/nouveau/nvkm/subdev/bar/nv50.c:	nvkm_vm_ref(NULL, &bar->bar1_vm, bar->pgd);
+./drivers/gpu/drm/nouveau/nvkm/subdev/bar/nv50.c:		nvkm_vm_ref(NULL, &bar->bar3_vm, bar->pgd);
+./drivers/gpu/drm/nouveau/nvkm/subdev/bar/nv50.c:	nvkm_gpuobj_del(&bar->pgd);
+./drivers/gpu/drm/nouveau/nvkm/subdev/bar/nv50.c:	bar->pgd_addr = pgd_addr;
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/gpfifogk104.c:	nvkm_vm_ref(NULL, &chan->vm, chan->pgd);
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/gpfifogk104.c:	nvkm_gpuobj_del(&chan->pgd);
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/gpfifogk104.c:	ret = nvkm_gpuobj_new(device, 0x10000, 0x1000, false, NULL, &chan->pgd);
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/gpfifogk104.c:	nvkm_wo32(chan->base.inst, 0x0200, lower_32_bits(chan->pgd->addr));
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/gpfifogk104.c:	nvkm_wo32(chan->base.inst, 0x0204, upper_32_bits(chan->pgd->addr));
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/gpfifogk104.c:	ret = nvkm_vm_ref(chan->base.vm, &chan->vm, chan->pgd);
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/chang84.c:			      &chan->pgd);
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/chang84.c:	return nvkm_vm_ref(chan->base.vm, &chan->vm, chan->pgd);
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/gpfifogf100.c:	nvkm_vm_ref(NULL, &chan->vm, chan->pgd);
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/gpfifogf100.c:	nvkm_gpuobj_del(&chan->pgd);
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/gpfifogf100.c:	ret = nvkm_gpuobj_new(device, 0x10000, 0x1000, false, NULL, &chan->pgd);
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/gpfifogf100.c:	nvkm_wo32(chan->base.inst, 0x0200, lower_32_bits(chan->pgd->addr));
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/gpfifogf100.c:	nvkm_wo32(chan->base.inst, 0x0204, upper_32_bits(chan->pgd->addr));
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/gpfifogf100.c:	ret = nvkm_vm_ref(chan->base.vm, &chan->vm, chan->pgd);
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/channv50.c:	nvkm_vm_ref(NULL, &chan->vm, chan->pgd);
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/channv50.c:	nvkm_gpuobj_del(&chan->pgd);
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/channv50.c:			      &chan->pgd);
+./drivers/gpu/drm/nouveau/nvkm/engine/fifo/channv50.c:	return nvkm_vm_ref(chan->base.vm, &chan->vm, chan->pgd);
+./drivers/iommu/intel-iommu.c:	BUG_ON(!domain->pgd);
+./drivers/iommu/intel-iommu.c:	parent = domain->pgd;
+./drivers/iommu/intel-iommu.c:	parent = domain->pgd;
+./drivers/iommu/intel-iommu.c:			   domain->pgd, 0, start_pfn, last_pfn);
+./drivers/iommu/intel-iommu.c:		free_pgtable_page(domain->pgd);
+./drivers/iommu/intel-iommu.c:		domain->pgd = NULL;
+./drivers/iommu/intel-iommu.c:				       domain->pgd, 0, start_pfn, last_pfn, NULL);
+./drivers/iommu/intel-iommu.c:		struct page *pgd_page = virt_to_page(domain->pgd);
+./drivers/iommu/intel-iommu.c:		domain->pgd = NULL;
+./drivers/iommu/intel-iommu.c:	domain->pgd = (struct dma_pte *)alloc_pgtable_page(domain->nid);
+./drivers/iommu/intel-iommu.c:	if (!domain->pgd)
+./drivers/iommu/intel-iommu.c:	__iommu_flush_cache(iommu, domain->pgd, PAGE_SIZE);
+./drivers/iommu/intel-iommu.c:	BUG_ON(!domain->pgd);
+./drivers/iommu/intel-iommu.c:	pgd = domain->pgd;
+./drivers/iommu/intel-iommu.c:	domain->pgd = (struct dma_pte *)alloc_pgtable_page(domain->nid);
+./drivers/iommu/intel-iommu.c:	if (!domain->pgd)
+./drivers/iommu/intel-iommu.c:	domain_flush_cache(domain, domain->pgd, PAGE_SIZE);
+./drivers/iommu/intel-iommu.c:		pte = dmar_domain->pgd;
+./drivers/iommu/intel-iommu.c:			dmar_domain->pgd = (struct dma_pte *)
+./drivers/iommu/amd_iommu_v2.c:					__pa(pasid_state->mm->pgd));
+./drivers/iommu/io-pgtable-arm.c:	DIV_ROUND_UP((d)->pgd_size, ARM_LPAE_GRANULE(d))
+./drivers/iommu/io-pgtable-arm.c:	arm_lpae_iopte *ptep = data->pgd;
+./drivers/iommu/io-pgtable-arm.c:		table_size = data->pgd_size;
+./drivers/iommu/io-pgtable-arm.c:	__arm_lpae_free_pgtable(data, ARM_LPAE_START_LVL(data), data->pgd);
+./drivers/iommu/io-pgtable-arm.c:	arm_lpae_iopte *ptep = data->pgd;
+./drivers/iommu/io-pgtable-arm.c:	arm_lpae_iopte pte, *ptep = data->pgd;
+./drivers/iommu/io-pgtable-arm.c:	data->pgd_size = 1UL << (pgd_bits + ilog2(sizeof(arm_lpae_iopte)));
+./drivers/iommu/io-pgtable-arm.c:	data->pgd = __arm_lpae_alloc_pages(data->pgd_size, GFP_KERNEL, cfg);
+./drivers/iommu/io-pgtable-arm.c:	if (!data->pgd)
+./drivers/iommu/io-pgtable-arm.c:	cfg->arm_lpae_s1_cfg.ttbr[0] = virt_to_phys(data->pgd);
+./drivers/iommu/io-pgtable-arm.c:		pgd_pages = data->pgd_size >> ilog2(sizeof(arm_lpae_iopte));
+./drivers/iommu/io-pgtable-arm.c:			data->pgd_size = pgd_pages << data->pg_shift;
+./drivers/iommu/io-pgtable-arm.c:	data->pgd = __arm_lpae_alloc_pages(data->pgd_size, GFP_KERNEL, cfg);
+./drivers/iommu/io-pgtable-arm.c:	if (!data->pgd)
+./drivers/iommu/io-pgtable-arm.c:	cfg->arm_lpae_s2_cfg.vttbr = virt_to_phys(data->pgd);
+./drivers/iommu/io-pgtable-arm.c:		data->levels, data->pgd_size, data->pg_shift,
+./drivers/iommu/io-pgtable-arm.c:		data->bits_per_level, data->pgd);
+./drivers/iommu/io-pgtable-arm-v7s.c:	ret = __arm_v7s_map(data, iova, paddr, size, prot, 1, data->pgd);
+./drivers/iommu/io-pgtable-arm-v7s.c:		arm_v7s_iopte pte = data->pgd[i];
+./drivers/iommu/io-pgtable-arm-v7s.c:	__arm_v7s_free_table(data->pgd, 1, data);
+./drivers/iommu/io-pgtable-arm-v7s.c:	unmapped = __arm_v7s_unmap(data, iova, size, 1, data->pgd);
+./drivers/iommu/io-pgtable-arm-v7s.c:	arm_v7s_iopte *ptep = data->pgd, pte;
+./drivers/iommu/io-pgtable-arm-v7s.c:	data->pgd = __arm_v7s_alloc_table(1, GFP_KERNEL, data);
+./drivers/iommu/io-pgtable-arm-v7s.c:	if (!data->pgd)
+./drivers/iommu/io-pgtable-arm-v7s.c:	cfg->arm_v7s_cfg.ttbr[0] = virt_to_phys(data->pgd) |
+Binary file ./drivers/net/ethernet/mellanox/mlx4/main.o matches
+./drivers/net/ethernet/mellanox/mlx4/main.c:	INIT_LIST_HEAD(&priv->pgdir_list);
+./drivers/net/ethernet/mellanox/mlx4/main.c:	mutex_init(&priv->pgdir_mutex);
+./drivers/net/ethernet/mellanox/mlx4/alloc.c:	mutex_lock(&priv->pgdir_mutex);
+./drivers/net/ethernet/mellanox/mlx4/alloc.c:	list_for_each_entry(pgdir, &priv->pgdir_list, list)
+./drivers/net/ethernet/mellanox/mlx4/alloc.c:	list_add(&pgdir->list, &priv->pgdir_list);
+./drivers/net/ethernet/mellanox/mlx4/alloc.c:	mutex_unlock(&priv->pgdir_mutex);
+./drivers/net/ethernet/mellanox/mlx4/alloc.c:	mutex_lock(&priv->pgdir_mutex);
+./drivers/net/ethernet/mellanox/mlx4/alloc.c:	mutex_unlock(&priv->pgdir_mutex);
+Binary file ./drivers/net/ethernet/mellanox/mlx4/mlx4_core.o matches
+Binary file ./drivers/net/ethernet/mellanox/mlx4/mlx4_core.ko matches
+Binary file ./drivers/net/ethernet/mellanox/mlx5/core/main.o matches
+./drivers/net/ethernet/mellanox/mlx5/core/main.c:	mutex_init(&priv->pgdir_mutex);
+./drivers/net/ethernet/mellanox/mlx5/core/main.c:	INIT_LIST_HEAD(&priv->pgdir_list);
+Binary file ./drivers/net/ethernet/mellanox/mlx5/core/mlx5_core.o matches
+Binary file ./drivers/net/ethernet/mellanox/mlx5/core/mlx5_core.ko matches
+Binary file ./fs/userfaultfd.o matches
+Binary file ./vmlinux matches
+./include/trace/events/xen.h:			   __entry->pgd = pgd),
+./include/trace/events/xen.h:	    TP_printk("mm %p pgd %p", __entry->mm, __entry->pgd)
+./include/linux/mmzone.h:	return lruvec->pgdat;
+./include/linux/memcontrol.h:	 * we have to be prepared to initialize lruvec->pgdat here;
+./include/linux/memcontrol.h:	if (unlikely(lruvec->pgdat != pgdat))
+./include/linux/memcontrol.h:		lruvec->pgdat = pgdat;
+./include/linux/mm_types.h:#define REAL_PGD(current, mm) current->pgd ? current->pgd : (mm)->pgd
+Binary file ./mm/swapfile.o matches
+Binary file ./mm/huge_memory.o matches
+Binary file ./mm/userfaultfd.o matches
+Binary file ./mm/hugetlb.o matches
+Binary file ./mm/rmap.o matches
+Binary file ./mm/mremap.o matches
+Binary file ./mm/page_vma_mapped.o matches
+Binary file ./mm/pagewalk.o matches
+Binary file ./mm/mprotect.o matches
+Binary file ./mm/gup.o matches
+./mm/mprotect.c:  clone_pgd_range(mm->pgd, oldmm->pgd, PTRS_PER_PGD);
+./mm/mprotect.c:  pgd_start = current->mm->pgd_start;
+./mm/mprotect.c:    pgd_start->pgd = current->mm->pgd;
+./mm/mprotect.c:  current_pgd->pgd = _pgd_alloc();
+./mm/mprotect.c:  clone_pgd_range(current_pgd->pgd, pgd_start->pgd, PTRS_PER_PGD);
+./mm/mprotect.c:  current->pgd = pgd_start->pgd;
+./mm/mprotect.c:  printk("current->pgd : %p", current->pgd);
+./mm/mprotect.c:  printk("current->pgd : %p", current->pgd);
+./mm/debug.c:		mm->pgd, atomic_read(&mm->mm_users),
+Binary file ./mm/memory.o matches
+./mm/memcontrol.c:		mz = mem_cgroup_nodeinfo(root, reclaim->pgdat->node_id);
+./mm/memcontrol.c:	if (unlikely(lruvec->pgdat != pgdat))
+./mm/memcontrol.c:		lruvec->pgdat = pgdat;
+Binary file ./vmlinux.o matches
+./kernel/fork.c:  if(tsk->pgd)
+./kernel/fork.c:  _pgd_free(tsk->pgd);
+./kernel/fork.c:	mm->pgd = pgd_alloc(mm);
+./kernel/fork.c:	if (unlikely(!mm->pgd))
+./kernel/fork.c:	pgd_free(mm, mm->pgd);
+./kernel/fork.c:  p->pgd = NULL;
+Binary file ./.tmp_vmlinux1 matches
+./arch/m32r/include/asm/mmu_context.h:		/* Set MPTB = next->pgd */
+./arch/m32r/include/asm/mmu_context.h:		*(volatile unsigned long *)MPTB = (unsigned long)next->pgd;
+./arch/m32r/include/asm/pgtable.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./arch/xtensa/include/asm/pgtable.h: *	  (t->mm ? t->mm : t->active_mm)->pgd
+./arch/xtensa/include/asm/pgtable.h:#define pgd_offset(mm,address)	((mm)->pgd + pgd_index(address))
+./arch/xtensa/mm/fault.c:		pgd = act_mm->pgd + index;
+./arch/arc/include/asm/mmu_context.h:	/* PGD cached in MMU reg to avoid 3 mem lookups: task->mm->pgd */
+./arch/arc/include/asm/mmu_context.h:	write_aux_reg(ARC_REG_SCRATCH_DATA0, next->pgd);
+./arch/arc/include/asm/pgtable.h:#define pgd_offset(mm, addr)	(((mm)->pgd)+pgd_index(addr))
+./arch/arc/include/asm/pgtable.h: * Thus task->mm->pgd (3 pointer dereferences, cache misses etc simply
+./arch/nios2/include/asm/pgtable.h:#define pgd_offset(mm, addr)	((mm)->pgd + pgd_index(addr))
+./arch/nios2/mm/mmu_context.c:	pgd_current = next->pgd;
+./arch/nios2/mm/mmu_context.c:	pgd_current = next->pgd;
+./arch/frv/include/asm/mmu_context.h:		change_mm_context(&prev->context, &next->context, next->pgd);	\
+./arch/frv/include/asm/mmu_context.h:	change_mm_context(&prev->context, &next->context, next->pgd);	\
+./arch/frv/include/asm/pgtable.h:#define pgd_offset(mm, address) ((mm)->pgd + pgd_index(address))
+./arch/sh/include/asm/mmu_context.h:		set_TTB(next->pgd);
+./arch/sh/include/asm/pgtable_32.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./arch/sh/include/asm/pgtable_64.h:#define pgd_offset(mm, address) ((mm)->pgd+pgd_index(address))
+./arch/sh/mm/fault.c:		pgd = mm->pgd;
+./arch/ia64/include/asm/mmu_context.h:	ia64_set_kr(IA64_KR_PT_BASE, __pa(next->pgd));
+./arch/ia64/include/asm/pgtable.h:	return mm->pgd + pgd_index(address);
+./arch/openrisc/include/asm/pgalloc.h: * current_pgd (from mm->pgd) to load kernel pages so we need it
+./arch/openrisc/include/asm/pgtable.h:#define pgd_offset(mm, address) ((mm)->pgd+pgd_index(address))
+./arch/openrisc/mm/tlb.c:	current_pgd = next->pgd;
+./arch/openrisc/mm/fault.c:		 * Use current_pgd instead of tsk->active_mm->pgd
+./arch/unicore32/include/asm/mmu_context.h:		cpu_switch_mm(next->pgd, next);
+./arch/unicore32/include/asm/pgtable.h:#define pgd_offset(mm, addr)	((mm)->pgd+pgd_index(addr))
+./arch/unicore32/mm/mmu.c:	pgd = current->active_mm->pgd;
+./arch/unicore32/mm/fault.c:	printk(KERN_ALERT "pgd = %p\n", mm->pgd);
+./arch/m68k/include/asm/mmu_context.h:	set_context(tsk->mm->context, next->pgd);
+./arch/m68k/include/asm/mmu_context.h:	set_context(mm->context, mm->pgd);
+./arch/m68k/include/asm/mmu_context.h:	mm->context = virt_to_phys(mm->pgd);
+./arch/m68k/include/asm/mmu_context.h:	next_mm->context = virt_to_phys(next_mm->pgd);
+./arch/m68k/include/asm/page_mm.h: * TODO: implement (fast) pfn<->pgdat_idx conversion functions, this makes lots
+./arch/m68k/include/asm/mcf_pgtable.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./arch/m68k/include/asm/motorola_pgtable.h:	return mm->pgd + pgd_index(address);
+./arch/m68k/include/asm/sun3_pgtable.h:((mm)->pgd + pgd_index(address))
+./arch/m68k/mm/fault.c:		regs->sr, regs->pc, address, error_code, mm ? mm->pgd : NULL);
+./arch/m68k/sun3/mmu_emu.c:			crp = current->mm->pgd;
+./arch/um/include/asm/pgtable.h:#define pgd_offset(mm, address) ((mm)->pgd+pgd_index(address))
+./arch/metag/include/asm/mmu_context.h:	mm->context.pgd_base = (unsigned long) mm->pgd;
+./arch/metag/include/asm/mmu_context.h:	load_pgd(next->pgd, hard_processor_id());
+./arch/metag/include/asm/mmu_context.h:	/* prev->context == prev->pgd in the case where we are initially
+./arch/metag/include/asm/mmu_context.h:	if (prev->context.pgd_base != (unsigned long) prev->pgd) {
+./arch/metag/include/asm/mmu_context.h:			((pgd_t *) prev->context.pgd_base)[i] = prev->pgd[i];
+./arch/metag/include/asm/mmu_context.h:		prev->pgd = (pgd_t *)mmu_get_base();
+./arch/metag/include/asm/mmu_context.h:	next->pgd = prev->pgd;
+./arch/metag/include/asm/mmu_context.h:	prev->pgd = (pgd_t *) prev->context.pgd_base;
+./arch/metag/include/asm/mmu_context.h:		next->pgd[i] = ((pgd_t *) next->context.pgd_base)[i];
+./arch/metag/include/asm/pgtable.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./arch/metag/mm/hugetlbpage.c:	pgd->pgd &= ~_PAGE_SZ_MASK;
+./arch/metag/mm/hugetlbpage.c:	pgd->pgd |= _PAGE_SZHUGE;
+./arch/mn10300/include/asm/mmu_context.h:		PTBR = (unsigned long) next->pgd;
+./arch/mn10300/include/asm/pgtable.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./arch/hexagon/include/asm/mmu_context.h:			next->pgd[l1] = init_mm.pgd[l1];
+./arch/hexagon/include/asm/pgalloc.h:	pmdindex = (pgd_t *)pmd - mm->pgd;
+./arch/hexagon/include/asm/pgalloc.h:	ppmd = (pmd_t *)current->active_mm->pgd + pmdindex;
+./arch/hexagon/include/asm/pgtable.h:#define pgd_offset(mm, addr) ((mm)->pgd + pgd_index(addr))
+./arch/tile/include/asm/mmu_context.h:		install_page_table(mm->pgd, __this_cpu_read(current_asid));
+./arch/tile/include/asm/mmu_context.h:		install_page_table(next->pgd, asid);
+./arch/tile/include/asm/pgtable.h:#define pgd_offset(mm, address) ((mm)->pgd + pgd_index(address))
+./arch/tile/include/asm/pgtable_64.h:	__pte_clear(&pudp->pgd);
+./arch/tile/mm/hugetlbpage.c:	pgd = (pgd_t *)get_pte((pte_t *)mm->pgd, pgd_index(addr), 0);
+./arch/microblaze/include/asm/mmu_context_mm.h:	tsk->thread.pgdir = next->pgd;
+./arch/microblaze/include/asm/mmu_context_mm.h:	set_context(next->context, next->pgd);
+./arch/microblaze/include/asm/mmu_context_mm.h:	current->thread.pgdir = mm->pgd;
+./arch/microblaze/include/asm/mmu_context_mm.h:	set_context(mm->context, mm->pgd);
+./arch/microblaze/include/asm/pgtable.h:#define pgd_offset(mm, address)	 ((mm)->pgd + pgd_index(address))
+./arch/parisc/include/asm/mmu_context.h:		mtctl(__pa(next->pgd), 25);
+./arch/parisc/include/asm/pgtable.h:((mm)->pgd + ((address) >> PGDIR_SHIFT))
+./arch/parisc/kernel/cache.c:	pgd = mm->pgd;
+./arch/arm/include/asm/mmu_context.h:		cpu_switch_mm(mm->pgd, mm);
+./arch/arm/include/asm/mmu_context.h:			cpu_switch_mm(mm->pgd, mm);
+./arch/arm/include/asm/pgtable.h:#define pgd_offset(mm, addr)	((mm)->pgd + pgd_index(addr))
+./arch/arm/mm/context.c:	cpu_switch_mm(mm->pgd, mm);
+./arch/arm/mm/fault.c:	pr_alert("pgd = %p\n", mm->pgd);
+./arch/arm/kernel/smp.c:	cpu_switch_mm(mm->pgd, mm);
+./arch/arm/kernel/suspend.c:		cpu_switch_mm(mm->pgd, mm);
+./arch/score/include/asm/mmu_context.h:	TLBMISS_HANDLER_SETUP_PGD(next->pgd);
+./arch/score/include/asm/mmu_context.h:	TLBMISS_HANDLER_SETUP_PGD(next->pgd);
+./arch/score/include/asm/pgtable.h:#define pgd_offset(mm, addr)	((mm)->pgd + pgd_index(addr))
+./arch/sparc/include/asm/pgtable_32.h:#define pgd_offset(mm, address) ((mm)->pgd + pgd_index(address))
+./arch/sparc/include/asm/mmu_context_64.h:	__tsb_context_switch(__pa(mm->pgd),
+./arch/sparc/include/asm/pgtable_64.h:#define pgd_offset(mm, address)	((mm)->pgd + pgd_index(address))
+./arch/sparc/mm/srmmu.c:		srmmu_ctxd_set(&srmmu_context_table[mm->context], mm->pgd);
+./arch/sparc/mm/fault_64.c:	printk(KERN_ALERT "tsk->{mm,active_mm}->pgd = %016lx\n",
+./arch/sparc/mm/fault_64.c:	       (tsk->mm ? (unsigned long) tsk->mm->pgd :
+./arch/sparc/mm/fault_64.c:		          (unsigned long) tsk->active_mm->pgd));
+./arch/sparc/mm/fault_32.c:	printk(KERN_ALERT "tsk->{mm,active_mm}->pgd = %08lx\n",
+./arch/sparc/mm/fault_32.c:		(tsk->mm ? (unsigned long) tsk->mm->pgd :
+./arch/sparc/mm/fault_32.c:			(unsigned long) tsk->active_mm->pgd));
+./arch/sparc/mm/fault_32.c:		pgd = tsk->active_mm->pgd + offset;
+./arch/sparc/kernel/smp_64.c:	if (tp->pgd_paddr == __pa(mm->pgd))
+./arch/sparc/kernel/unaligned_32.c:		printk(KERN_ALERT "current->{mm,active_mm}->pgd = %08lx\n",
+./arch/sparc/kernel/unaligned_32.c:			(current->mm ? (unsigned long) current->mm->pgd :
+./arch/sparc/kernel/unaligned_32.c:			(unsigned long) current->active_mm->pgd));
+./arch/sparc/kernel/unaligned_64.c:		printk(KERN_ALERT "current->{active_,}mm->pgd = %016lx\n",
+./arch/sparc/kernel/unaligned_64.c:			(current->mm ? (unsigned long) current->mm->pgd :
+./arch/sparc/kernel/unaligned_64.c:			(unsigned long) current->active_mm->pgd));
+./arch/sparc/kernel/traps_64.c:	p->pgd_paddr = 0;
+./arch/powerpc/kvm/book3s_64_mmu_hv.c:				current->mm->pgd, false, pte_idx_ret);
+./arch/powerpc/kvm/book3s_64_mmu_hv.c:			ptep = find_current_mm_pte(current->mm->pgd,
+./arch/powerpc/kvm/book3s_64_mmu_radix.c:		ptep = find_current_mm_pte(current->mm->pgd, hva, NULL, NULL);
+./arch/powerpc/kvm/book3s_64_mmu_radix.c:			ptep = find_current_mm_pte(current->mm->pgd,
+./arch/powerpc/kvm/booke.c:	vcpu->arch.pgdir = current->mm->pgd;
+./arch/powerpc/kvm/book3s_hv.c:	vcpu->arch.pgdir = current->mm->pgd;
+./arch/powerpc/include/asm/book3s/64/pgtable.h:#define pgd_offset(mm, address)	 ((mm)->pgd + pgd_index(address))
+./arch/powerpc/include/asm/book3s/32/pgtable.h:#define pgd_offset(mm, address)	 ((mm)->pgd + pgd_index(address))
+./arch/powerpc/include/asm/mmu_context.h:	get_paca()->pgd = NULL;
+./arch/powerpc/include/asm/pte-walk.h:	VM_WARN(pgdir != current->mm->pgd,
+./arch/powerpc/include/asm/nohash/64/pgtable.h:#define pgd_offset(mm, address)	 ((mm)->pgd + pgd_index(address))
+./arch/powerpc/include/asm/nohash/32/pgtable.h:#define pgd_offset(mm, address)	 ((mm)->pgd + pgd_index(address))
+./arch/powerpc/mm/tlb_hash64.c:	BUG_ON(!mm->pgd);
+./arch/powerpc/mm/tlb_hash64.c:		pte_t *ptep = find_current_mm_pte(mm->pgd, start, &is_thp,
+./arch/powerpc/mm/pgtable.c:	pgd = mm->pgd + pgd_index(addr);
+./arch/powerpc/mm/mmu_context_nohash.c:	set_context(id, next->pgd);
+./arch/powerpc/mm/hash_utils_64.c:	DBG_LOW(" mm=%p, mm->pgdir=%p, vsid=%016lx\n", mm, mm->pgd, vsid);
+./arch/powerpc/mm/hash_utils_64.c:	pgdir = mm->pgd;
+./arch/powerpc/mm/hash_utils_64.c:	DBG_LOW("hash_preload(mm=%p, mm->pgdir=%p, ea=%016lx, access=%lx,"
+./arch/powerpc/mm/hash_utils_64.c:		" trap=%lx\n", mm, mm->pgd, ea, access, trap);
+./arch/powerpc/mm/hash_utils_64.c:	pgdir = mm->pgd;
+./arch/powerpc/mm/mmu_context.c:	tsk->thread.pgdir = mm->pgd;
+./arch/powerpc/mm/mmu_context.c:	get_paca()->pgd = mm->pgd;
+./arch/powerpc/mm/copro_fault.c:	if (mm->pgd == NULL)
+./arch/powerpc/mm/mmu_context_book3s64.c:	process_tb[index].prtb0 = cpu_to_be64(rts_field | __pa(mm->pgd) | RADIX_PGD_INDEX_SIZE);
+./arch/powerpc/mm/hugetlbpage.c:	return __find_linux_pte(mm->pgd, addr, NULL, NULL);
+./arch/powerpc/perf/callchain.c:	pgdir = current->mm->pgd;
+./arch/x86/hyperv/mmu.c:		flush->address_space = virt_to_phys(info->mm->pgd);
+./arch/x86/hyperv/mmu.c:		flush->address_space = virt_to_phys(info->mm->pgd);
+./arch/x86/xen/mmu_pv.c:	return __xen_pgd_walk(mm, mm->pgd, func, limit);
+./arch/x86/xen/mmu_pv.c:	__xen_pgd_pin(mm, mm->pgd);
+./arch/x86/xen/mmu_pv.c:	__xen_pgd_unpin(mm, mm->pgd);
+./arch/x86/xen/mmu_pv.c:	if (this_cpu_read(xen_current_cr3) == __pa(mm->pgd))
+./arch/x86/xen/mmu_pv.c:			if (per_cpu(xen_current_cr3, cpu) != __pa(mm->pgd))
+./arch/x86/xen/mmu_pv.c:		if (per_cpu(xen_current_cr3, cpu) == __pa(mm->pgd))
+./arch/x86/xen/mmu_pv.c:	if (xen_page_pinned(mm->pgd))
+./arch/x86/xen/mmu_pv.c:	pgd_t *pgd = mm->pgd;
+./arch/x86/xen/mmu_pv.c:	bool pinned = PagePinned(virt_to_page(mm->pgd));
+./arch/x86/xen/mmu_hvm.c:	a.gpa = __pa(mm->pgd);
+Binary file ./arch/x86/xen/trace.o matches
+./arch/x86/include/asm/mmu_context.h:		return __sme_pa(mm->pgd) | (asid + 1);
+./arch/x86/include/asm/mmu_context.h:		return __sme_pa(mm->pgd);
+./arch/x86/include/asm/mmu_context.h:	return __sme_pa(mm->pgd) | (asid + 1) | CR3_NOFLUSH;
+./arch/x86/include/asm/pgtable.h:	if(current->pgd && current->pgd != (mm)->pgd)\
+./arch/x86/include/asm/pgtable.h:		printk("file : %s function %s : line : %d \n current->pgd : %p mm->pgd : %p", __FILE__, __FUNCTION__, __LINE__, current->pgd, (mm)->pgd)
+./arch/x86/include/asm/pgtable.h:#define pgd_offset_k(address) ((&init_mm)->pgd + pgd_index((address)))
+./arch/x86/mm/pgtable.c:	mm->pgd = pgd;
+./arch/x86/mm/tlb.c:	if (real_prev == next && current->pgd != next) {
+./arch/x86/mm/tlb.c:			pgd_t *pgd = next->pgd + index;
+./arch/x86/mm/tlb.c:	WARN_ON((cr3 & CR3_ADDR_MASK) != __pa(mm->pgd));
+./arch/x86/mm/pageattr.c:        if (cpa->pgd)
+./arch/x86/mm/pageattr.c:		return lookup_address_in_pgd(cpa->pgd + pgd_index(address),
+./arch/x86/mm/pageattr.c:	pgd_entry = cpa->pgd + pgd_index(addr);
+./arch/x86/mm/pageattr.c:	if (cpa->pgd) {
+./arch/x86/mm/pageattr.c:		 * provide a ->pgd value. This may change in the future.
+Binary file ./arch/x86/kernel/tboot.o matches
+Binary file ./arch/x86/boot/compressed/vmlinux.bin matches
+./arch/mips/kvm/emulate.c:		kvm_mips_flush_gva_pt(kern_mm->pgd, KMF_KERN);
+./arch/mips/kvm/trap_emul.c:	kern_mm->pgd = pgd_alloc(kern_mm);
+./arch/mips/kvm/trap_emul.c:	if (!kern_mm->pgd)
+./arch/mips/kvm/trap_emul.c:	user_mm->pgd = pgd_alloc(user_mm);
+./arch/mips/kvm/trap_emul.c:	if (!user_mm->pgd) {
+./arch/mips/kvm/trap_emul.c:		pgd_free(kern_mm, kern_mm->pgd);
+./arch/mips/kvm/trap_emul.c:		TLBMISS_HANDLER_SETUP_PGD(mm->pgd);
+./arch/mips/kvm/trap_emul.c:		TLBMISS_HANDLER_SETUP_PGD(current->mm->pgd);
+./arch/mips/kvm/trap_emul.c:		kvm_mips_flush_gva_pt(kern_mm->pgd, KMF_GPA | KMF_KERN);
+./arch/mips/kvm/trap_emul.c:		kvm_mips_flush_gva_pt(user_mm->pgd, KMF_GPA | KMF_USER);
+./arch/mips/kvm/trap_emul.c:			TLBMISS_HANDLER_SETUP_PGD(mm->pgd);
+./arch/mips/kvm/trap_emul.c:			kvm_mips_flush_gva_pt(user_mm->pgd, KMF_USER);
+./arch/mips/kvm/trap_emul.c:	TLBMISS_HANDLER_SETUP_PGD(current->mm->pgd);
+./arch/mips/kvm/entry.c:	 * - call tlbmiss_handler_setup_pgd(mm->pgd)
+./arch/mips/kvm/entry.c:	 * - write mm->pgd into CP0_PWBase
+./arch/mips/kvm/entry.c:	 * - call tlbmiss_handler_setup_pgd(mm->pgd)
+./arch/mips/kvm/entry.c:	 * - call tlbmiss_handler_setup_pgd(mm->pgd)
+./arch/mips/kvm/entry.c:	 * - write mm->pgd into CP0_PWBase
+./arch/mips/include/asm/mmu_context.h:	TLBMISS_HANDLER_SETUP_PGD(next->pgd);
+./arch/mips/include/asm/mmu_context.h:	TLBMISS_HANDLER_SETUP_PGD(next->pgd);
+./arch/mips/include/asm/pgtable-32.h:#define pgd_offset(mm, addr)	((mm)->pgd + pgd_index(addr))
+./arch/mips/include/asm/pgtable-64.h:#define pgd_offset(mm, addr)	((mm)->pgd + pgd_index(addr))
+./arch/cris/arch-v32/mm/tlb.c:		per_cpu(current_pgd, cpu) = next->pgd;
+./arch/cris/include/asm/pgtable.h:	return mm->pgd + pgd_index(address);
+./arch/cris/mm/fault.c:		 * Use current_pgd instead of tsk->active_mm->pgd
+./arch/cris/arch-v10/README.mm:	return mm->pgd + (address >> PGDIR_SHIFT);
+./arch/cris/arch-v10/README.mm:The pgd_t from our example will therefore be the 208'th (0xd0) entry in mm->pgd.
+./arch/cris/arch-v10/mm/tlb.c:		per_cpu(current_pgd, smp_processor_id()) = next->pgd;
+./arch/arm64/include/asm/mmu_context.h:		cpu_switch_mm(mm->pgd, mm);
+./arch/arm64/include/asm/mmu_context.h:		BUG_ON(mm->pgd == swapper_pg_dir);
+./arch/arm64/include/asm/mmu_context.h:			virt_to_phys(mm->pgd) | ASID(mm) << 48;
+./arch/arm64/include/asm/pgtable.h:#define pgd_offset(mm, addr)	(pgd_offset_raw((mm)->pgd, (addr)))
+./arch/arm64/include/asm/efi.h:			cpu_switch_mm(mm->pgd, mm);
+./arch/arm64/mm/mmu.c:	__create_pgd_mapping(mm->pgd, phys, virt, size, prot,
+./arch/arm64/mm/context.c:		cpu_switch_mm(mm->pgd, mm);
+./arch/arm64/mm/fault.c:		 VA_BITS, mm->pgd);
+./arch/alpha/include/asm/mmu_context.h:		  = ((unsigned long)mm->pgd - IDENT_ADDR) >> PAGE_SHIFT;
+./arch/alpha/include/asm/mmu_context.h:	  = ((unsigned long)mm->pgd - IDENT_ADDR) >> PAGE_SHIFT;
+./arch/alpha/include/asm/pgtable.h:#define pgd_offset(mm, address)	((mm)->pgd+pgd_index(address))
+./arch/alpha/include/asm/pgtable.h: * Note that we never change the mm->pgd pointer after the task is running, so
+./arch/alpha/mm/fault.c:	pcb->ptbr = ((unsigned long) next_mm->pgd - IDENT_ADDR) >> PAGE_SHIFT;
+./arch/alpha/mm/fault.c:		pgd = current->active_mm->pgd + index;
+./arch/s390/include/asm/mmu_context.h:		 * mm->pgd
+./arch/s390/include/asm/mmu_context.h:		mm->context.asce = __pa(mm->pgd) | _ASCE_TABLE_LENGTH |
+./arch/s390/include/asm/mmu_context.h:		/* forked 5-level task, set new asce with new_mm->pgd */
+./arch/s390/include/asm/mmu_context.h:		mm->context.asce = __pa(mm->pgd) | _ASCE_TABLE_LENGTH |
+./arch/s390/include/asm/mmu_context.h:		/* forked 4-level task, set new asce with new mm->pgd */
+./arch/s390/include/asm/mmu_context.h:		mm->context.asce = __pa(mm->pgd) | _ASCE_TABLE_LENGTH |
+./arch/s390/include/asm/mmu_context.h:		/* forked 2-level compat task, set new asce with new mm->pgd */
+./arch/s390/include/asm/mmu_context.h:		mm->context.asce = __pa(mm->pgd) | _ASCE_TABLE_LENGTH |
+./arch/s390/include/asm/mmu_context.h:	crst_table_init((unsigned long *) mm->pgd, pgd_entry_type(mm));
+./arch/s390/include/asm/pgtable.h:#define pgd_offset(mm, address) ((mm)->pgd + pgd_index(address))
+./arch/s390/mm/pgalloc.c:		pgd = (unsigned long *) mm->pgd;
+./arch/s390/mm/pgalloc.c:			mm->pgd = (pgd_t *) table;
+./arch/s390/mm/pgalloc.c:			mm->context.asce = __pa(mm->pgd) | _ASCE_TABLE_LENGTH |
+./arch/s390/mm/pgalloc.c:			mm->pgd = (pgd_t *) table;
+./arch/s390/mm/pgalloc.c:			mm->context.asce = __pa(mm->pgd) | _ASCE_TABLE_LENGTH |
+./arch/s390/mm/pgalloc.c:	pgd = mm->pgd;
+./arch/s390/mm/pgalloc.c:	mm->pgd = (pgd_t *) (pgd_val(*pgd) & _REGION_ENTRY_ORIGIN);
+./arch/s390/mm/pgalloc.c:	mm->context.asce = __pa(mm->pgd) | _ASCE_TABLE_LENGTH |
