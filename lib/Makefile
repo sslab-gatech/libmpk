@@ -15,8 +15,6 @@ mpt2:
 install:
 	cp libmpt.so /usr/local/lib/
 	cp libmpt.so /usr/lib/
-#	cp libmpt2.so /usr/local/lib/
-#	cp libmpt2.so /usr/lib/
 	mkdir -p /usr/include/mpt	
 	cp headers/*.h /usr/include/mpt/
 
