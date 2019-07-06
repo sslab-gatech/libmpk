@@ -15,7 +15,7 @@ Build and install the kernel:
 
       - libmpk was developed on Linux 4.14.2.
       - The Linux kernel source is available in ./kernel
-      - Enable memory protection keys when the kernel is compiled.
+      - Enable memory protection keys when compiling the kernel.
       - Build and install the kernel.
       
 Build general library:
