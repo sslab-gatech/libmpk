@@ -66,8 +66,8 @@ pkey_set_real(int pkru, int pkey)
 
 int pkey_read(int idx);
 int pkey_mprotect(void *ptr, size_t size, unsigned long orig_prot, unsigned long pkey) ;
-int pkey_alloc(int flag, int permit);
-int pkey_free(unsigned long pkey);
+int pkey_alloc(unsigned int flag, unsigned int permit);
+int pkey_free(int pkey);
 #ifdef __cplusplus
 extern "C" {
 #endif

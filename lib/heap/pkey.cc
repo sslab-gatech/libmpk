@@ -17,13 +17,13 @@ return syscall(SYS_pkey_mprotect, ptr, size, orig_prot, pkey);
 }
 
 int 
-pkey_alloc(int flag, int permit) 
+pkey_alloc(unsigned int flag, unsigned int permit) 
 { 
 return syscall(SYS_pkey_alloc, flag, permit); 
 }
 
 int 
-pkey_free(unsigned long pkey) 
+pkey_free(int pkey) 
 { 
 return syscall(SYS_pkey_free, pkey); 
 }
