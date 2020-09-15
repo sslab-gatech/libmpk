@@ -8,7 +8,7 @@ pkey_read(int idx)
   int eax = rdpkru();
   return (eax >> (idx * 2)) & 3;
 }
-
+/*
 int 
 pkey_mprotect(void *ptr, size_t size, int orig_prot, 
 int pkey) 
@@ -27,7 +27,7 @@ pkey_free(int pkey)
 { 
 return syscall(SYS_pkey_free, pkey); 
 }
-
+*/
 int
 evict_mprotect(struct mprot* m1, struct mprot* m2)
 {
