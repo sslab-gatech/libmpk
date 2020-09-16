@@ -16,6 +16,7 @@
 
 #define LOGGING 0
 #define __SOURCEFILE__ (strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)
+/*
 #define rlog(format, ...) { \
     if( LOGGING ) { \
         FILE *fp = fopen("/home/soyeon/log/log2", "a"); \
@@ -24,6 +25,7 @@
         fclose(fp); \
     }\
 }
+*/
 static inline void 
 wrpkru(unsigned int pkru) 
 { 
