@@ -44,7 +44,7 @@ rdpkru() {
       : "=a" (eax), "=d" (edx) : "c" (0));
   return eax;
 }
-
+/*
 static inline int
 pkey_set(int pkru) 
 { 
@@ -52,7 +52,7 @@ asm volatile(".byte 0x0f,0x01,0xef\n\t"
 : : "a" (pkru), "c" (0), "d" (0)); 
 return 0;
 }
-
+*/
 static int
 pkey_set_real(int pkru, int pkey) 
 {
