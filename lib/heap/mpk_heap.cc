@@ -131,7 +131,7 @@ void *mpk_mmap(int mpk_id,
     mpk[mpk_id]->start = base;
     mpk[mpk_id]->total_size = len;
 
-    free_list_init(mpk[mpk_id]);
+    free_list_init(mpk_id);
 
     rlog("Memdom ID %d mmaped at %p\n", mpk_id, base);
 
