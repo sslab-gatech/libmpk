@@ -264,11 +264,15 @@ void *mpk_alloc(int mpk_id, unsigned long sz) {
      * start searching the free list from the head until first fit is found.
      */
     free_list = mpk[mpk_id]->free_list_tail;
+    if(!free_list) {
+        rlog("[%s] free_list is NULL\n", __func__);
+    }
 
     /* Allocate from tail: 
      * check if the last element in free list is available, 
      * allocate memory from it */
     rlog("[%s] mpk %d search from tail for 0x%lx bytes\n", __func__, mpk_id, sz);     
+    rlog("[%s] free_list size: %d\n", free_list->size);
     if ( free_list && sz <= free_list->size ) {
         memblock = (char*)free_list->addr;
 
