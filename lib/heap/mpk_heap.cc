@@ -130,9 +130,13 @@ void *mpk_mmap(int mpk_id,
     }
     mpk[mpk_id]->start = base;
     mpk[mpk_id]->total_size = len;
+
+    free_list_init(mpk[mpk_id]);
+
     rlog("Memdom ID %d mmaped at %p\n", mpk_id, base);
 
-    rlog("[%s] mpk %d mmaped 0x%lx bytes at %p\n", __func__, mpk_id, len, base);
+    rlog("[%s] mpk %d mmaped 0x%lx bytes at %p\n", __func__, mpk_id, mpk[mpk_id]->total_size, mpk[mpk_id]->start);
+    rlog("[%s] mpk %d free list addr: %p, free list size\n", __func__, mpk_id, mpk[mpk_id]->free_list_tail->addr, mpk[mpk_id]->free_list_tail->size);
     return base;
 }
 
@@ -263,9 +267,6 @@ void *mpk_alloc(int mpk_id, unsigned long sz) {
      * start searching the free list from the head until first fit is found.
      */
     free_list = mpk[mpk_id]->free_list_tail;
-    if(!free_list) {
-        free_list_init(mpk_id);
-    }
 
     /* Allocate from tail: 
      * check if the last element in free list is available, 
