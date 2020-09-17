@@ -52,7 +52,6 @@ int mpk_create(){
 #endif
     mpk[mpk_id]->mpk_id = mpk_id;
     mpk[mpk_id]->start = NULL; // mpk_alloc will do the actual mmap
-    mpk[mpk_id]->total_size = 0;
     mpk[mpk_id]->free_list_head = NULL;
     mpk[mpk_id]->free_list_tail = NULL;
     pthread_mutex_init(&mpk[mpk_id]->mlock, NULL);
@@ -265,7 +264,6 @@ void *mpk_alloc(int mpk_id, unsigned long sz) {
      */
     free_list = mpk[mpk_id]->free_list_tail;
     if(!free_list) {
-        rlog("[%s] free_list is NULL\n", __func__);
         free_list_init(mpk_id);
     }
 
