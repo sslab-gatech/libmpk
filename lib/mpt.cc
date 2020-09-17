@@ -213,8 +213,8 @@ int mpt_mmap(void** addr, size_t length, int prot, int flags)
   static std::atomic_int m_cnt;
   int id = m_cnt.fetch_add(1, std::memory_order_relaxed);
   void* r_addr = (void *)syscall(335, NULL, length, prot, flags | MAP_ANONYMOUS | MAP_PRIVATE, id);
-  //mpt_node* mn = hash_get(id); //new mpt_node(r_addr, length, prot);
-  //hash_put(id, mn);
+  mpt_node* mn = hash_get(id); //new mpt_node(r_addr, length, prot);
+  hash_put(id, mn);
   *addr = r_addr;
   n_mmap.fetch_add(1, std::memory_order_relaxed);
 
