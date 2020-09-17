@@ -268,7 +268,7 @@ void *mpk_alloc(int mpk_id, unsigned long sz) {
      */
     free_list = mpk[mpk_id]->free_list_tail;
     rlog("!!! [%s] mpk %d !!!\n", __func__, mpk_id);
-    rlog("!!! [%s] free list addr: %p, free list size: %d !!!\n", __func__, mpk[mpk_id]->free_list_tail->addr, mpk[mpk_id]->free_list_tail->size);
+    rlog("!!! [%s] free list addr: %p, free list size: %d !!!\n", __func__, free_list->addr, free_list->size);
 
     /* Allocate from tail: 
      * check if the last element in free list is available, 
