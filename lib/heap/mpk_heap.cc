@@ -267,6 +267,7 @@ void *mpk_alloc(int mpk_id, unsigned long sz) {
      * start searching the free list from the head until first fit is found.
      */
     free_list = mpk[mpk_id]->free_list_tail;
+    rlog("[%s] mpk %d free_list: %p\n", mpk_id, free_list);
 
     /* Allocate from tail: 
      * check if the last element in free list is available, 
