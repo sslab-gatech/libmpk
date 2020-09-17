@@ -57,7 +57,6 @@ int mpk_create(){
     mpk[mpk_id]->free_list_tail = NULL;
     pthread_mutex_init(&mpk[mpk_id]->mlock, NULL);
     mid = mpk_id;
-    free_list_init(mpk_id);
     return mpk_id;
 }
 
@@ -267,6 +266,7 @@ void *mpk_alloc(int mpk_id, unsigned long sz) {
     free_list = mpk[mpk_id]->free_list_tail;
     if(!free_list) {
         rlog("[%s] free_list is NULL\n", __func__);
+        free_list_init(mpk_id);
     }
 
     /* Allocate from tail: 
