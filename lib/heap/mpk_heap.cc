@@ -136,7 +136,7 @@ void *mpk_mmap(int mpk_id,
     rlog("Memdom ID %d mmaped at %p\n", mpk_id, base);
 
     rlog("[%s] mpk %d mmaped 0x%lx bytes at %p\n", __func__, mpk_id, mpk[mpk_id]->total_size, mpk[mpk_id]->start);
-    rlog("[%s] mpk %d free list addr: %p, free list size\n", __func__, mpk_id, mpk[mpk_id]->free_list_tail->addr, mpk[mpk_id]->free_list_tail->size);
+    rlog("[%s] mpk %d free list addr: %p, free list size: %d\n", __func__, mpk_id, mpk[mpk_id]->free_list_tail->addr, mpk[mpk_id]->free_list_tail->size);
     return base;
 }
 
