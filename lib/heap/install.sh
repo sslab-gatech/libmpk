@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 export SYSLIB=/usr/lib
 export SYSINC=/usr/include
 

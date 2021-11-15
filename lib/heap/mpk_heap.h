@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT */
 #ifndef MEMDOM_LIB_H
 #define MEMDOM_LIB_H
 

@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT */
 #include <stdbool.h>
 #include <sys/mman.h>
 #define MAX_PKEY 16

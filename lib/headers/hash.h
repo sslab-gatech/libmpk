@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: MIT */
 #define TABLE_SIZE 0x4000
 template <typename T>
 
