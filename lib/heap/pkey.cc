@@ -9,7 +9,7 @@ pkey_read(int idx)
   int eax = rdpkru();
   return (eax >> (idx * 2)) & 3;
 }
-
+/*
 int 
 pkey_mprotect(void *ptr, size_t size, unsigned long orig_prot, 
 unsigned long pkey) 
@@ -18,17 +18,17 @@ return syscall(SYS_pkey_mprotect, ptr, size, orig_prot, pkey);
 }
 
 int 
-pkey_alloc(int flag, int permit) 
+pkey_alloc(unsigned int flag, unsigned int permit) 
 { 
 return syscall(SYS_pkey_alloc, flag, permit); 
 }
 
 int 
-pkey_free(unsigned long pkey) 
+pkey_free(int pkey) 
 { 
 return syscall(SYS_pkey_free, pkey); 
 }
-
+*/
 int pkey_sync()
 {
   return syscall(__NR_pkey_sync, rdpkru());

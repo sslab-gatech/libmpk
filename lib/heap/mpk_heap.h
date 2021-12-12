@@ -100,6 +100,9 @@ void mpk_free(void* data);
 /* Get the calling thread's defualt mpk id */
 int mpk_private_id(void);
 
+/* Initialize free list */
+void free_list_init(int mpk_id);
+
 #ifdef __cplusplus
 }
 #endif

@@ -9,26 +9,26 @@ pkey_read(int idx)
   int eax = rdpkru();
   return (eax >> (idx * 2)) & 3;
 }
-
+/*
 int 
-pkey_mprotect(void *ptr, size_t size, unsigned long orig_prot, 
-unsigned long pkey) 
+pkey_mprotect(void *ptr, size_t size, int orig_prot, 
+int pkey) 
 { 
 return syscall(SYS_pkey_mprotect, ptr, size, orig_prot, pkey); 
 }
 
 int 
-pkey_alloc(int flags, int permit) 
+pkey_alloc(unsigned int flags, unsigned int permit) 
 { 
 return syscall(SYS_pkey_alloc, flags, permit); 
 }
 
 int 
-pkey_free(unsigned long pkey) 
+pkey_free(int pkey) 
 { 
 return syscall(SYS_pkey_free, pkey); 
 }
-
+*/
 int
 evict_mprotect(struct mprot* m1, struct mprot* m2)
 {

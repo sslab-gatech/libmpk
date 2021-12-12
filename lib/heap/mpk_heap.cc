@@ -9,7 +9,7 @@
 #include <mpt/mpt.h>
 #include "mpk_heap.h"
 
-#define LOGGING 0
+#define LOGGING 1
 #define __SOURCEFILE__ (strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)
 #define rlog(format, ...) { \
     if( LOGGING ) { \
@@ -53,7 +53,6 @@ int mpk_create(){
 #endif
     mpk[mpk_id]->mpk_id = mpk_id;
     mpk[mpk_id]->start = NULL; // mpk_alloc will do the actual mmap
-    mpk[mpk_id]->total_size = 0;
     mpk[mpk_id]->free_list_head = NULL;
     mpk[mpk_id]->free_list_tail = NULL;
     pthread_mutex_init(&mpk[mpk_id]->mlock, NULL);
@@ -132,9 +131,13 @@ void *mpk_mmap(int mpk_id,
     }
     mpk[mpk_id]->start = base;
     mpk[mpk_id]->total_size = len;
+
+    free_list_init(mpk_id);
+
     rlog("Memdom ID %d mmaped at %p\n", mpk_id, base);
 
-    rlog("[%s] mpk %d mmaped 0x%lx bytes at %p\n", __func__, mpk_id, len, base);
+    rlog("[%s] mpk %d mmaped 0x%lx bytes at %p\n", __func__, mpk_id, mpk[mpk_id]->total_size, mpk[mpk_id]->start);
+    rlog("[%s] mpk %d free list addr: %p, free list size: %d\n", __func__, mpk_id, mpk[mpk_id]->free_list_tail->addr, mpk[mpk_id]->free_list_tail->size);
     return base;
 }
 
@@ -270,6 +273,7 @@ void *mpk_alloc(int mpk_id, unsigned long sz) {
      * check if the last element in free list is available, 
      * allocate memory from it */
     rlog("[%s] mpk %d search from tail for 0x%lx bytes\n", __func__, mpk_id, sz);     
+
     if ( free_list && sz <= free_list->size ) {
         memblock = (char*)free_list->addr;
 

@@ -17,6 +17,7 @@
 
 #define LOGGING 0
 #define __SOURCEFILE__ (strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)
+/*
 #define rlog(format, ...) { \
     if( LOGGING ) { \
         FILE *fp = fopen("/home/soyeon/log/log2", "a"); \
@@ -25,6 +26,7 @@
         fclose(fp); \
     }\
 }
+*/
 static inline void 
 wrpkru(unsigned int pkru) 
 { 
@@ -43,7 +45,7 @@ rdpkru() {
       : "=a" (eax), "=d" (edx) : "c" (0));
   return eax;
 }
-
+/*
 static inline int
 pkey_set(int pkru) 
 { 
@@ -51,7 +53,7 @@ asm volatile(".byte 0x0f,0x01,0xef\n\t"
 : : "a" (pkru), "c" (0), "d" (0)); 
 return 0;
 }
-
+*/
 static int
 pkey_set_real(int pkru, int pkey) 
 {
@@ -66,9 +68,11 @@ pkey_set_real(int pkru, int pkey)
 }
 
 int pkey_read(int idx);
+/*
 int pkey_mprotect(void *ptr, size_t size, unsigned long orig_prot, unsigned long pkey) ;
-int pkey_alloc(int flag, int permit);
-int pkey_free(unsigned long pkey);
+int pkey_alloc(unsigned int flag, unsigned int permit);
+int pkey_free(int pkey);
+*/
 #ifdef __cplusplus
 extern "C" {
 #endif
